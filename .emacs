@@ -1,5 +1,12 @@
 ;;.emacs
 
+;; open time display
+(display-time )
+
+;; set language env
+(set-language-environment "UTF-8")
+
+;; add package sources
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
