@@ -163,6 +163,7 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -179,6 +180,7 @@ layers configuration."
  '(ahs-inhibit-face-list nil)
  '(mac-command-modifier (quote super))
  '(mac-option-modifier (quote meta))
+ '(python-shell-interpreter "python3")
  '(ring-bell-function (quote ignore) t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
