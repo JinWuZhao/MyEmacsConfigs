@@ -155,6 +155,15 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+  ;; indicate python exc path
+  (require 'python)
+  (defun python-shell-parse-command ()
+    "Return the string used to execute the inferior Python process."
+    "python3 -i"
+    )
+  ;; ace-window config
+  (global-set-key (kbd "C-x o") 'ace-window)
+  (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
   )
 
 (defun dotspacemacs/config ()
