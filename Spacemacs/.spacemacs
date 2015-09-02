@@ -18,7 +18,7 @@
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      auto-completion
-     ;; better-defaults
+     better-defaults
      emacs-lisp
      python
      haskell
@@ -164,6 +164,8 @@ before layers configuration."
   ;; ace-window config
   (global-set-key (kbd "C-x o") 'ace-window)
   (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+  (setq shell-default-shell 'term)
+  (setq shell-default-term-shell "/usr/local/bin/fish")
   )
 
 (defun dotspacemacs/config ()
