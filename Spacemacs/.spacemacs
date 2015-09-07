@@ -22,8 +22,8 @@
      emacs-lisp
      python
      haskell
-     ;; git
-     ;; markdown
+     git
+     markdown
      org
      shell
      ;; syntax-checking
