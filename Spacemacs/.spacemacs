@@ -189,6 +189,12 @@ layers configuration."
  '(ahs-inhibit-face-list nil)
  '(mac-command-modifier (quote super))
  '(mac-option-modifier (quote meta))
+ '(package-archives
+   (quote
+    (("melpa-stable" . "https://stable.melpa.org/packages/")
+     ("org" . "http://orgmode.org/elpa/")
+     ("ELPA" . "http://tromey.com/elpa/")
+     ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(python-shell-interpreter "python3")
  '(ring-bell-function (quote ignore) t))
 (custom-set-faces
