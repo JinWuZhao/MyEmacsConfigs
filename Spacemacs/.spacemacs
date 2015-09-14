@@ -26,6 +26,7 @@
      markdown
      org
      shell
+     ;;sql
      ;; syntax-checking
      version-control
      )
