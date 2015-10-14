@@ -202,7 +202,7 @@ values."
   (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
   ;;(setq shell-default-shell 'term)
   ;;(setq shell-default-term-shell "/usr/local/bin/fish")
-   ))
+  )
 
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
@@ -223,19 +223,7 @@ layers configuration. You are free to put any user code."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ahs-case-fold-search nil)
- '(ahs-default-range (quote ahs-range-whole-buffer))
- '(ahs-idle-interval 0.25)
- '(ahs-idle-timer 0 t)
- '(ahs-inhibit-face-list nil)
- '(mac-command-modifier (quote super))
+  '(mac-command-modifier (quote super))
  '(mac-option-modifier (quote meta))
  ;;'(python-shell-interpreter "python3")
- '(ring-bell-function (quote ignore) t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
- '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
+  )
