@@ -29,6 +29,7 @@ values."
      (haskell :variables
               haskell-enable-ghc-mod-support t
               haskell-enable-shm-support t)
+     python
      ;; git
      ;; markdown
      ;; org
@@ -192,11 +193,11 @@ values."
    )
   ;; User initialization goes here
   ;; indicate python exc path
-  ;;(require 'python)
-  ;;(defun python-shell-parse-command ()
-  ;;  "Return the string used to execute the inferior Python process."
-  ;;  "python3 -i"
-  ;;)
+  (require 'python)
+  (defun python-shell-parse-command ()
+    "Return the string used to execute the inferior Python process."
+    "python3 -i"
+  )
   ;; ace-window config
   (global-set-key (kbd "C-x o") 'ace-window)
   (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
@@ -225,5 +226,5 @@ layers configuration. You are free to put any user code."
  ;; If there is more than one, they won't work right.
   '(mac-command-modifier (quote super))
  '(mac-option-modifier (quote meta))
- ;;'(python-shell-interpreter "python3")
+ '(python-shell-interpreter "python3")
   )
