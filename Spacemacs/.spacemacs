@@ -26,6 +26,8 @@ values."
      auto-completion
      better-defaults
      emacs-lisp
+     common-lisp
+     scheme
      (haskell :variables
               haskell-enable-ghc-mod-support t
               haskell-enable-shm-support t)
@@ -34,8 +36,8 @@ values."
             c-c++-default-mode-for-headers 'c++-mode
             c-c++-enable-clang-support t)
      ;; git
-     ;; markdown
-     ;; org
+     markdown
+     org
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -195,17 +197,13 @@ values."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
-  ;; indicate python exc path
-  (require 'python)
-  (defun python-shell-parse-command ()
-    "Return the string used to execute the inferior Python process."
-    "python3 -i"
-  )
   ;; ace-window config
   (global-set-key (kbd "C-x o") 'ace-window)
   (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
   ;;(setq shell-default-shell 'term)
   ;;(setq shell-default-term-shell "/usr/local/bin/fish")
+  ;; org-mode config auto truncate lines
+  (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
   )
 
 (defun dotspacemacs/user-init ()
@@ -229,5 +227,4 @@ layers configuration. You are free to put any user code."
  ;; If there is more than one, they won't work right.
   '(mac-command-modifier (quote super))
  '(mac-option-modifier (quote meta))
- '(python-shell-interpreter "python3")
   )
