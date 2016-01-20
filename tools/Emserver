@@ -1,0 +1,3 @@
+#!/bin/bash
+
+Emcs $1 --daemon

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export PATH="$HOME/.custompath:$PATH"
+export SHELL="/bin/bash"
+
+emacs $@
